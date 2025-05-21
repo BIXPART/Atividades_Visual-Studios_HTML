@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia-PC</title>
-</head>
-<body>
-    
-    <div class="imagem-com-botao">
-        <img src="sua-imagem.jpg" alt="Imagem de fundo">
-        <button class="btn-sobre-imagem">Clique aqui</button>
-      </div>
+  <meta charset="UTF-8">
+  <title>Guia-PC</title>
+  <link rel="stylesheet" href="botao.css">
+  <style>
+    .imagem-com-botao {
+      position: relative;
+      display: inline-block;
+    }
 
-    <img src="gabinete.png" width="500" height="650" alt="">
-    <img src="monitor.png" width="500" height="500" alt="">
+    .imagem-com-botao img.bg {
+      width: 500px;
+      height: auto;
+      display: block;
+    }
+
+    .destaque {
+      position: absolute;
+      display: none;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .btn-peca {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      width: 200px;
+      height: 60px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .btn-peca:hover + .destaque {
+      display: block;
+    }
+  </style>
+</head>
+<body style="background-color: cadetblue;">
+
+<div class="imagem-com-botao">
+  <!-- Imagem principal do gabinete -->
+  <img src="gabinete.png" class="bg" alt="Gabinete">
+
+  <!-- placa de video -->
+  <a href="placa-de-video.html" class="btn-peca" style="top: 255px; left: 50px; width: 230px; height: 35px;"></a>
+  <img src="Sem título.png" class="destaque" style="top: 255px; left: 50px; width: 230px; height: 35px;">
+
+    <!--processador-->
+  <a href="processador.html" class="btn-peca" style="top: 130px; left: 107px; width: 200px; height: 75px; width: 75px;"></a>
+  <img src="vermelho.jpg" class="destaque" style="top: 130px; left: 107px; width: 200px; height: 75px; width: 75px;">
+
+  <!--memoria ram-->
+  <a href="memoria ram.html" class="btn-peca" style="top: 110px; left: 180px; width: 200px; height: 125px; width: 32px;"></a>
+  <img src="vermelho.jpg" class="destaque" style="top: 110px; left: 180px; width: 200px; height: 125px; width: 32px;">
+</div>
+
+<H1>Tudo sobre pc</H1>
+
 </body>
 </html>
