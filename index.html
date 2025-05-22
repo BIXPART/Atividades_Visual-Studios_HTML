@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula java</title>
+    <style>
+        p{
+            color: blueviolet
+    
+        }
+    </style>
+    <script>
+        //isto é um comentario de uma linha
+        <!--isto é um comentario de multlinha-->
+        //caixa de dialogo - pop-up:
+        //colocar aqui pois vai ser executado antes do body.
+        //3 tipos de caixa de dialogo
+       
+        //caixa de alerta
+        alert("minha primeira mensagem")
+       
+        //caixa de confirmação
+        confirm("uma mensagem")
+
+        //caixa de dialogo
+        prompt("escreva seu nome:")
+
+        //escreva html com js (java script)
+        document.write("<p>olá html!<p>")
+        
+        //declaração de variavel
+        //esta é uma variavel flexivel (variavel dinamicamente tipada) então suporta quaisquer tipo de dado
+        //variavel global
+        minhaVariavel=prompt("digite seu nome:")
+
+        alert("bem vindo! "+ minhaVariavel)
+        //função
+        funcao1=function(){
+            //variavel local
+            var minhaVariavel = "alberto"
+            alert("bem vindo! "+ minhaVariavel)
+            
+        }
+        funcao2=function(){
+            alert("bem vindo" + minhaVariavel)
+        }
+        funcao3=function(){
+            var variaveltest1
+            prompt("digite um nome:"+ variaveltest1)
+        }
+        
+
+            
+
+    </script>
+    funcao3
+    <button type="button" ></button>
+</head>
+<body>
+    <script>
+        alert("bob")
+    </script>
+
+    <button type="button" onclick="alert('clique no botão')" >clique no botão</button>
+    <button type="button" onclick="confirm('uma mensagem')">clica no botão</button>
+    <button type="button" onclick="prompt('escreva seu nome')">clique neste botão</button>
+    <br/>
+    <button type="button" onclick="document.write('<p>este conteudo foi inserido após clicar no botão')">inserir conteudo</button>
+    
+</body>
+</html>
