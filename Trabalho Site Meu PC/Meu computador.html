@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Guia-PC</title>
+  <link rel="stylesheet" href="botao.css">
+  <style>
+    .imagem-com-botao {
+      position: relative;
+      display: inline-block;
+    }
+
+    .imagem-com-botao img.bg {
+      width: 500px;
+      height: auto;
+      display: block;
+    }
+
+    .destaque {
+      position: absolute;
+      display: none;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .btn-peca {
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      width: 200px;
+      height: 60px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .btn-peca:hover + .destaque {
+      display: block;
+    }
+  </style>
+</head>
+<body style="background-color: cadetblue;">
+
+<div class="imagem-com-botao">
+  <!-- Imagem principal do gabinete -->
+  <img src="gabinete.png" class="bg" alt="Gabinete">
+
+  <!-- placa de video -->
+  <a href="placa-de-video.html" class="btn-peca" style="top: 255px; left: 50px; width: 230px; height: 35px;"></a>
+  <img src="Sem título.png" class="destaque" style="top: 255px; left: 50px; width: 230px; height: 35px;">
+
+    <!--processador-->
+  <a href="processador.html" class="btn-peca" style="top: 130px; left: 107px; width: 200px; height: 75px; width: 75px;"></a>
+  <img src="vermelho.jpg" class="destaque" style="top: 130px; left: 107px; width: 200px; height: 75px; width: 75px;">
+
+  <!--memoria ram-->
+  <a href="memoria ram.html" class="btn-peca" style="top: 110px; left: 180px; width: 200px; height: 125px; width: 32px;"></a>
+  <img src="vermelho.jpg" class="destaque" style="top: 110px; left: 180px; width: 200px; height: 125px; width: 32px;">
+
+  <!--Fonte-->
+  <a href="memoria ram.html" class="btn-peca" style="top: 370px; left: 57px; width: 200px; height: 75px; width: 110px;"></a>
+  <img src="vermelho.jpg" class="destaque" style="top: 370px; left: 57px; width: 200px; height: 75px; width: 110px;">
+</div>
+
+<img src="frente gabinete.png" width="400" height="500" alt="">
+<img src="monitor.png" width="500" alt="">
+<H1>Tudo sobre pc</H1>
+
+</body>
+</html>

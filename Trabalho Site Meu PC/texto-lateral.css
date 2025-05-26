@@ -1,0 +1,10 @@
+.texto-lateral {
+  width: 300px;              /* Largura do bloco */
+  background-color: white;   /* Fundo branco */
+  padding: 15px;             /* Espaçamento interno */
+  border-radius: 10px;       /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: left;          /* Alinhamento do texto */
+  margin: 20px;              /* Espaço externo */
+  font-family: Arial, sans-serif;
+}
